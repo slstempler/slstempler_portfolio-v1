@@ -1,0 +1,169 @@
+/* Core Styles */
+
+body {
+    font-family: roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    margin-left: 20px;
+    font-family: Roboto, sans-serif;
+}
+
+
+/* Navbar */
+
+nav {
+    width: 100%;
+    margin: 0;
+    padding: 0px 0px 0px 0px;
+    min-height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav h3 {
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+nav ul li {
+    color: #FFF;
+    display: inline;
+    padding-right: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease-in;
+}
+
+nav a:hover {
+    color: red;
+    transition: color 0.2s ease-in;
+}
+
+/* Main Content Classes */
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.showcase-card {
+    text-align: center;
+}
+
+
+/* Intro Graf */
+
+#intro h3 {
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#intro {
+    margin: 75px 0px;
+}
+
+/* Showcase Panel */
+
+#showcase h2 {
+    text-align: center;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+#showcase {
+    margin-bottom: 50px;
+}
+
+.showcase-card .showcase-image {
+    width: 400px;
+    height: 200px;
+    background-color: black;
+}
+
+/* Mini Contact Panel */
+
+#contact-mini {
+    width: 600px;
+    height: 250px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+#contact-mini .flex {
+    flex-flow: column nowrap;
+    justify-items: flex-end;
+}
+
+#mini-headshot {
+    width: 150px;
+    height: 100px;
+    justify-self: center;
+    align-self: center;
+}
+
+#mini-headshot h3 {
+    color: #fff;
+    text-align: center;
+}
+
+#mini-headshot img {
+    width: 150px;
+    margin-left: 50px;
+}
+
+#contact-contact {
+    justify-content: space-around;
+    margin: 15px 50px 15px 0px;
+}
+
+/* Footer */
+footer {
+    color: #fff;
+    background-color: black;
+    align-items: center;
+}
+footer ul li {
+    display: inline;
+}
+
+/* Contact Info Page */
+#contact-full {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 20px 0px 50px 0px;
+}
+#contact-full #mini-headshot {
+    height: 200px;
+    width: 200px;
+}
+
+#headshot-bio {
+    height: 200px;
+    width: 200px;
+}
+
+#resume-placeholder {
+    width: 1000px;
+    height: 900px;
+    background-color:rgb(109, 109, 109);
+    position: relative;
+    left: 18%;
+    margin-bottom: 100px;
+}
