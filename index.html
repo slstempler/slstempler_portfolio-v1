@@ -2,37 +2,47 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400" rel="stylesheet">
+    <title>Sean Stempler Portfolio</title>
+    <script id="page-script" src="/script.js" async></script>
 </head>
 <body>
     <nav>
         <script id="navbar" src="/nav_script.js" async></script>
         
     </nav>
-    <h1>Sean Stempler</h1>
-    <h2>Design, Editing, Web Development</h2>
-    <section id="intro">
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+    <section id="header" class="flex">
+        <div id="name-title" class="flex">
+            <h1>Sean Stempler</h1>
+            <h2>Design, Editing, Web Development</h2>
+        </div>
+        <div id="intro" class="flex">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
     </section>
     <section id="showcase">
-        <h2>Examples of Work:</h2>
+        <h2>Projects & Roles</h2>
         <div class="flex">
             <div class="showcase-card">
-                <div class="showcase-image" id="showcase1"></div>
-                <h3>commARCH</h3>
-                <h5>Head of video & podcasts</h5>
+                <a href="/video_editing.html"><div class="showcase-image" id="showcase1"></div></a>
+                <h3>commARCH | Head of Video & Podcasts</h3>
                 <p>Video editing, podcast voiceover and assets</p>
+                <p><em>Adobe Premiere + After Effects</em></p>
             </div>
             <div class="showcase-card">
-                <div class="showcase-image" id="showcase2"></div>
+                <a href="/design.html"><div class="showcase-image" id="showcase2"></div></a>
                 <h3>Trilogy Realty Branding</h3>
-                <h5>Full brand package including logos and assets for social</h5>
-                <p>Design from concept to prodction</p>
+                <p>Design from concept to prodction, full brand package including social</p>
+                <p><em>Adobe Illustrator + Photoshop</em></p>
             </div>
             <div class="showcase-card">
-                <div class="showcase-image" id="showcase3"></div>
+                <a href="/web_dev.html"><div class="showcase-image" id="showcase3"></div></a>
                 <h3>This Website!</h3>
-                <h5>Evolving portfolio site</h5>
-                <p>Design from concept to production</p>
+                <p>Evolving portfolio site, design from concept to production</p>
+                <p><em>HTML + CSS + JavaScript</em></p>
             </div>
         </div>
     </section>
