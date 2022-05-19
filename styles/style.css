@@ -62,12 +62,10 @@ nav ul li {
 nav a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.2s ease-in;
 }
 
-nav a:hover {
+nav a:hover, footer a:hover {
     color: red;
-    transition: color 0.2s ease-in;
 }
 
 nav img {
@@ -81,6 +79,43 @@ nav img {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+}
+
+/* Dropdown Menu - Nav */
+.drop-content {
+    display: none;
+}
+
+.dropdown:hover .drop-content {
+    display: block;
+}
+
+.drop-button {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.drop-content {
+    position: absolute;
+    background-color: #60073ed2;
+    box-shadow: 5px 5px 5px #000;
+}
+
+.drop-content a {
+    display: block;
+    padding: 10px;
+}
+
+.drop-content a:hover {
+    background-color: #360422d2;
+}
+
+nav i {
+    font-size: 15px;
 }
 /* Main Content Classes */
 
@@ -140,12 +175,17 @@ nav img {
 }
 
 #showcase {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    max-width: 100%;
+}
+
+#showcase .flex {
+    flex-wrap: wrap;
 }
 
 .showcase-card .showcase-image {
-    width: 500px;
-    height: 250px;
+    width: 31.25rem;
+    height: 15.625rem;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -211,9 +251,27 @@ footer {
     color: #fff;
     background-color: black;
     align-items: center;
+    text-align: center;
 }
+
 footer ul li {
     display: inline;
+}
+
+footer ul.flex {
+    gap: 10px;
+}
+
+footer .ft-text {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    align-self: center;
+}
+
+.social-ico img {
+    height: 30px;
+    padding: 0px 5px;
 }
 
 /* Contact Info Page */
@@ -240,4 +298,28 @@ footer ul li {
     position: relative;
     left: 18%;
     margin-bottom: 100px;
+}
+
+/* Mobile Styles */ 
+@media screen and (max-width: 360px) {
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 10px;
+    }
+    nav #li_toggle {
+        display: none;
+    }
+
+    #intro, #showcase h3, #showcasea p {
+        max-width: 90%;
+    }
+
+    .showcase-card .showcase-image {
+        width: 22.5rem;
+        height: 11.25rem;
+    }
 }
