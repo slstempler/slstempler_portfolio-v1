@@ -101,8 +101,8 @@ nav img {
 
 .drop-content {
     position: absolute;
-    background-color: #60073ed2;
-    box-shadow: 5px 5px 5px #000;
+    background-color: #60073e;
+    box-shadow: 5px 5px 5px #000000d2;
 }
 
 .drop-content a {
@@ -141,7 +141,7 @@ nav i {
     max-width: 80%;
     justify-content: space-around;
     align-content: center;
-    margin: 75px auto;
+    margin: 4.688rem auto;
 }
 
 #name-title {
@@ -300,7 +300,51 @@ footer .ft-text {
     margin-bottom: 100px;
 }
 
-/* Mobile Styles */ 
+/* Video Editing Product Page */
+.cA-grid {
+    display: grid;
+    grid-template: 1fr 3fr 1fr 1fr / repeat(3, minmax(0px, 1fr));
+    grid-template-areas: "cAheader cAheader cAheader"
+               "cAcontent cAcontent2 cAcontent3"
+               "cAcopy cAcopy cAcopy"
+               "cAfooter cAfooter cAfooter";
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 0px 1rem;
+}
+#cA-header {
+    grid-area: cAheader;
+}
+#cA-content {
+    grid-area: cAcontent;
+}
+#cA-copy {
+    grid-area: cAcopy;
+    padding-left: 20px;
+    margin: 0px auto;
+    padding: 5px;
+}
+
+#cA-content2 {
+    grid-area: cAcontent2;
+}
+
+#cA-content3 {
+    grid-area: cAcontent3;
+}
+/*
+#commarch iframe {
+    max-width: 90%;
+    height: 170px;
+}
+*/
+.vid-container {
+    width: 100%;
+}
+
+/* Mobile Styles - Phones */ 
 @media screen and (max-width: 360px) {
     .flex {
         flex-wrap: wrap;
@@ -310,16 +354,86 @@ footer .ft-text {
         justify-content: center;
         gap: 10px;
     }
+
     nav #li_toggle {
         display: none;
     }
 
-    #intro, #showcase h3, #showcasea p {
-        max-width: 90%;
+    #intro {
+        max-width: 95%;
+    }
+
+    #header {
+        margin: 2.5rem auto;
+    }
+
+    #header h1, #header h2 {
+        text-align: center;
+        border: 1px solid royalblue;
+    }
+
+    #showcase {
+        margin-bottom: 0px;
+    }
+
+    #showcase h3, #showcase p {
+        text-align: center;
+        margin: 1rem 1rem;
+    }  
+
+    .showcase-card {
+        padding-bottom: 1rem;
     }
 
     .showcase-card .showcase-image {
         width: 22.5rem;
         height: 11.25rem;
+    }
+
+    footer .flex {
+        justify-content: center;
+    }
+    
+    footer ul {
+        padding-left: 0px;
+    }
+
+    #foot-bar {
+        flex-direction: column;
+        padding-top: 0.7rem;
+    }
+
+    footer span, footer a {
+        font-size: 14px;
+    }
+
+    .social-ico img {
+        height: 25px;
+    }
+
+    /* Mobile - Editing Page */
+    /* Try layout for collapsible margin columns w/auto-fill?? Side-by-side layout with alternating L/R video + copy? Include technolgies used? Need content lock first, then finish layout/style. */ 
+    #commarch h2 {
+        padding: 0px;
+        margin: 1rem 0px 0px 0px;
+    }
+    .cA-grid {
+        grid-template: 3rem minmax(min-content, max-content) repeat(3, 1fr) / 1fr;
+        grid-template-areas: "cAheader"
+                             "cAcopy"
+                             "cAcontent"
+                             "cAcontent2"
+                             "cAcontent3";
+        gap: 10px 0px;
+    }
+    #commarch div iframe {
+        height: 190px;
+    }
+}
+
+/* Mobile Styles - Tablet */
+@media screen and (min-width: 361px) and (max-width: 768px) {
+    #header h1 {
+        border: 1px solid aqua;
     }
 }

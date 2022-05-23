@@ -4,7 +4,7 @@ document.querySelector('nav').innerHTML = `
 </div>
 <ul>
     <li class="dropdown">
-        <button class="drop-button">Disciplines
+        <button class="drop-button">Projects
             <i>▼</i>
         </button>
         <div class="drop-content">
