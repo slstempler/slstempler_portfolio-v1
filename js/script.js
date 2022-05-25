@@ -10,7 +10,7 @@ function dark_toggle() {
     let toggled = document.getElementById("toggle-button");
 
     //check state, apply effects as needed and swap flag
-    if (darkstate == "on" && (currentPage == "/slstempler_portfolio/" || currentPage == "/index.html")) {
+    if (darkstate == "on" && (currentPage == "/slstempler_portfolio/" || currentPage == "/index.html" || currentPage == "/slstempler_portfolio/index.html")) {
         darkstate = "off";
         toggled.src = "./assets/lightmode-nav.png";
     }
@@ -18,7 +18,7 @@ function dark_toggle() {
         darkstate = "off";
         toggled.src = "../assets/lightmode-nav.png";
     }
-    else if (darkstate == "off" && (currentPage == "/slstempler_portfolio/" || currentPage == "/index.html")){
+    else if (darkstate == "off" && (currentPage == "/slstempler_portfolio/" || currentPage == "/index.html" || currentPage == "/slstempler_portfolio/index.html")){
         darkstate = "on";
         toggled.src = "./assets/darkmode-nav.png";
     }
