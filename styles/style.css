@@ -202,14 +202,14 @@ nav i {
 }
 
 #showcase1 {
-    background-image: url("/assets/cz_jansen_thumb.jpg");
+    background-image: url("../assets/cz_jansen_thumb.jpg");
 }
 #showcase2 {
-    background-image: url("/assets/Asset\ 17x1500.png");
+    background-image: url("../assets/Asset\ 17x1500.png");
     background-size: auto 90%;
 }
 #showcase3 {
-    background-image: url("/assets/site_image.png");
+    background-image: url("../assets/site_image.png");
 }
 
 /* Mini Contact Panel */
