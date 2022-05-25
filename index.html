@@ -12,7 +12,26 @@
 </head>
 <body>
     <nav>
-        <script id="navbar" src="js/nav_script.js" async></script>
+        <!--
+            <script id="navbar" src="js/nav_script.js" async></script>
+        -->
+        <div> 
+            <h3><a href="/index.html">Sean Stempler</a></h3>
+        </div>
+        <ul>
+            <li class="dropdown">
+                <button class="drop-button">Projects
+                    <i>▼</i>
+                </button>
+                <div class="drop-content">
+                    <a href="./html/video_editing.html">Video Editing</a>
+                    <a href="./html/web_dev.html">Web Development</a>
+                    <a href="./html/design.html">Graphic Design</a>
+                </div>
+            </li>
+            <li id="li_toggle"><a href="#" onclick="dark_toggle()"><img src="./assets/darkmode-nav.png" id="toggle-button"></a></li>
+        </ul>
+        </div>
     </nav>
     <section id="header" class="flex">
         <div id="name-title" class="flex">
@@ -27,19 +46,19 @@
         <h2>Recent Projects & Roles</h2>
         <div class="flex">
             <div class="showcase-card">
-                <a href="/html/video_editing.html"><div class="showcase-image" id="showcase1"></div></a>
+                <a href="./html/video_editing.html"><div class="showcase-image" id="showcase1"></div></a>
                 <h3>commARCH | Head of Video & Podcasts</h3>
                 <p>Video editing, podcast voiceover and assets</p>
                 <p><em>Adobe Premiere + After Effects</em></p>
             </div>
             <div class="showcase-card">
-                <a href="/html/design.html"><div class="showcase-image" id="showcase2"></div></a>
+                <a href="./html/design.html"><div class="showcase-image" id="showcase2"></div></a>
                 <h3>Trilogy Realty Branding</h3>
                 <p>Design from concept to prodction, full brand package including social</p>
                 <p><em>Adobe Illustrator + Photoshop</em></p>
             </div>
             <div class="showcase-card">
-                <a href="/html/web_dev.html"><div class="showcase-image" id="showcase3"></div></a>
+                <a href="./html/web_dev.html"><div class="showcase-image" id="showcase3"></div></a>
                 <h3>This Website!</h3>
                 <p>Evolving portfolio site, design from concept to production</p>
                 <p><em>HTML + CSS + JavaScript</em></p>
@@ -53,7 +72,7 @@
             <li class="social-ico"><a href="https://www.linkedin.com/in/slstempler/"><img src="../assets/LI-In-Bug.png"></li></a>
             <li class="social-ico"><a href=""><img src="../assets/Twitter social icons - rounded square - white.png"></a></li>
             <li class="social-ico"><a href="https://github.com/slstempler"><img src="../assets/GitHub-Mark-Light-120px-plus.png"></a></li>
-            <li class="flex"><a href="/html/contact.html" class="ft-text">Contact</a></li>
+            <li class="flex"><a href="./html/contact.html" class="ft-text">Contact</a></li>
         </ul>
     </footer>
 </body>
