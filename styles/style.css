@@ -26,6 +26,10 @@ h2 {
     font-size: 30px;
 }
 
+.page-wrapper {
+    height: 100vh;
+}
+
 /* Navbar */
 
 nav {
@@ -128,7 +132,9 @@ nav i {
 .showcase-card {
     text-align: center;
 }
-
+.spacer {
+    height: 2rem;
+}
 
 /* Intro Header */
 
@@ -301,6 +307,7 @@ footer .ft-text {
 }
 
 /* Video Editing Product Page */
+/* OLD GRID
 .cA-grid {
     display: grid;
     grid-template: 1fr 3fr 1fr 1fr / repeat(3, minmax(0px, 1fr));
@@ -314,6 +321,22 @@ footer .ft-text {
     text-align: center;
     gap: 0px 1rem;
 }
+*/
+
+.cA-grid {
+    display: grid;
+    grid-template: minmax(min-content, max-content) repeat(2, minmax(min-content, 80%)) 5% / minmax(1rem, 1fr) repeat(2, minmax(min-content, 70ch)) minmax(1rem, 1fr);
+    grid-template-areas: ". cAheader cAheader ."
+                         ". cAcontent cAcopy ."
+                         ". cAcopy2 cAcontent2 ."
+                         ". cAspacer cAspacer .";
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 0px 1rem;
+}
+
 #cA-header {
     grid-area: cAheader;
 }
@@ -322,9 +345,14 @@ footer .ft-text {
 }
 #cA-copy {
     grid-area: cAcopy;
-    padding-left: 20px;
     margin: 0px auto;
     padding: 5px;
+}
+#cA-copy2 {
+    grid-area: cAcopy2;
+    margin: 0px auto;
+    padding: 5px;
+
 }
 
 #cA-content2 {
@@ -334,6 +362,9 @@ footer .ft-text {
 #cA-content3 {
     grid-area: cAcontent3;
 }
+#cA-spacer {
+    grid-area: cAspacer;
+}
 /*
 #commarch iframe {
     max-width: 90%;
@@ -342,6 +373,11 @@ footer .ft-text {
 */
 .vid-container {
     width: 100%;
+}
+
+footer ul li:last-child
+{
+    display: none;
 }
 
 /* Mobile Styles - Phones */ 
@@ -412,18 +448,19 @@ footer .ft-text {
     }
 
     /* Mobile - Editing Page */
-    /* Try layout for collapsible margin columns w/auto-fill?? Side-by-side layout with alternating L/R video + copy? Include technolgies used? Need content lock first, then finish layout/style. */ 
+    /* Try layout for collapsible margin columns w/auto-fill??[X] Side-by-side layout with alternating L/R video + copy? Include technolgies used? Need content lock first, then finish layout/style. */ 
     #commarch h2 {
         padding: 0px;
         margin: 1rem 0px 0px 0px;
     }
     .cA-grid {
-        grid-template: 3rem minmax(min-content, max-content) repeat(3, 1fr) / 1fr;
-        grid-template-areas: "cAheader"
-                             "cAcopy"
-                             "cAcontent"
-                             "cAcontent2"
-                             "cAcontent3";
+        grid-template: 3rem repeat(2, minmax(min-content, max-content) 1fr) / minmax(1rem, 1fr) minmax(auto, 70ch) minmax(1rem, 1fr);
+       /* grid-template: 3rem minmax(min-content, max-content) repeat(3, 1fr) / 1fr;*/
+        grid-template-areas: ". cAheader ."
+                             ". cAcopy ."
+                             ". cAcontent ."
+                             ". cAcopy2 ."
+                             ". cAcontent2 .";
         gap: 10px 0px;
     }
     #commarch div iframe {
@@ -431,6 +468,17 @@ footer .ft-text {
     }
 }
 
+@media screen and (orientation: landscape) and (max-width:740px) {
+    .cA-grid {
+        grid-template: 3rem minmax(min-content, max-content) repeat(3, 1fr) / minmax(1rem, 1fr) minmax(auto, 70ch) minmax(1rem, 1fr);
+        grid-template-areas: ". cAheader ."
+                             ". cAcopy ."
+                             ". cAcontent ."
+                             ". cAcopy2 ."
+                             ". cAcontent2 .";
+        gap: 10px 0px;
+    }
+}
 /* Mobile Styles - Tablet */
 @media screen and (min-width: 361px) and (max-width: 768px) {
     #header h1 {
